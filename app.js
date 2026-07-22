@@ -14,7 +14,7 @@ const MODS_DATA = [
     creator: "SKINPACK",
     downloadUrl: "https://sharemods.com/0v0e6n6u8ieg/ZED_ASTRA_SKINPACK_TEAM_JAR.scs.html",
     shortDesc: "ZED ASTRA SKINPACK FREE RELEASE.",
-    description: "ZED ASTRA SKINPACK FREE RELEASE. 5 SKINS. Password in Video. https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
+    description: "ZED ASTRA SKINPACK FREE RELEASE. 5 SKINS. Password in Video:https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
     features: [
       "High Quality Skin Pack",
       "High Optimized",
