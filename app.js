@@ -59,7 +59,7 @@ const MODS_DATA = [
     creator: "SOUND",
     downloadUrl: "https://sharemods.com/j8fzkmge2sz6/free_vocal_BY_JAR.rar.html",
     shortDesc: "FREE VOCAL PACK ENJOY!",
-    description: "Enhance your Euro Truck Simulator 2 experience with this free Vocal Pack. Featuring high-quality voice effects, realistic audio, and seamless compatibility with ETS2 v1.40–1.60+. Easy to install and perfect for making every journey more immersive.",
+    description: "Enhance your Euro Truck Simulator 2 experience with this free Vocal Pack. Featuring high-quality voice effects, realistic audio, and seamless compatibility with ETS2 v1.40–1.60+. Easy to install and perfect for making every journey more immersive. Password in Video:https://youtube.com/shorts/gtcvy5HA_Zw?si=h2Y49KvBehGQzvH9",
     features: [
       "High Optimized Vocal Mod",
       "Featuring high-quality voice effects",
