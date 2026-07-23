@@ -13,12 +13,36 @@ const MODS_DATA = [
     releaseDate: "July 2026",
     creator: "SKINPACK",
     downloadUrl: "https://sharemods.com/0v0e6n6u8ieg/ZED_ASTRA_SKINPACK_TEAM_JAR.scs.html",
+    passwordUrl: "https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
     shortDesc: "ZED ASTRA SKINPACK FREE RELEASE.",
     description: "ZED ASTRA SKINPACK FREE RELEASE. 5 SKINS. Password in Video:https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
     features: [
       "High Quality Skin Pack",
       "High Optimized",
       "5 exclusive skins",
+      "Free Mod"
+    ]
+  },
+  {
+    id: "FORTUNER",
+    name: "FORTUNER MOD",
+    category: "car",
+    price: 0,
+    rating: 4.6,
+    reviewsCount: 142,
+    image: "https://cdn.discordapp.com/attachments/1524805311699882095/1529916577565118596/2-11.jpg?ex=6a63ad58&is=6a625bd8&hm=650f9fa86f642eb299897c55b59e142d7f3320a3f41685ce00501c19fa23fcc0&",
+    version: "1.50 - 1.60+",
+    fileSize: "660 MB",
+    releaseDate: "July 2026",
+    creator: "CAR",
+    downloadUrl: "https://sharemods.com/qyfaof2mlede/FORTUNER_BY_TEAM_JAR.scs.html",
+    passwordUrl: "https://discord.gg/cZKrkP7fyP",
+    shortDesc: "Fortuner car mod for free.",
+    description: "Fortuner car mod for free by TEAM JAR",
+    features: [
+      "High Quality Car mod",
+      "High Optimized",
+      "Realstics",
       "Free Mod"
     ]
   },
@@ -35,6 +59,7 @@ const MODS_DATA = [
     releaseDate: "April 2026",
     creator: "MAP",
     downloadUrl: "https://discord.gg/cZKrkP7fyP",
+    passwordUrl: "https://discord.gg/cZKrkP7fyP",
     shortDesc: "SILVANGI MAP MOD ETS 2 1.40 - 1.60+",
     description: "SILVANGI MAP MOD ETS 2 1.40 - 1.60+. WITH PROFILE AND DLC",
     features: [
@@ -58,6 +83,7 @@ const MODS_DATA = [
     releaseDate: "April 2026",
     creator: "SOUND",
     downloadUrl: "https://sharemods.com/j8fzkmge2sz6/free_vocal_BY_JAR.rar.html",
+    passwordUrl: "https://youtube.com/shorts/gtcvy5HA_Zw?si=h2Y49KvBehGQzvH9",
     shortDesc: "FREE VOCAL PACK ENJOY!",
     description: "Enhance your Euro Truck Simulator 2 experience with this free Vocal Pack. Featuring high-quality voice effects, realistic audio, and seamless compatibility with ETS2 v1.40–1.60+. Easy to install and perfect for making every journey more immersive. Password in Video:https://youtube.com/shorts/gtcvy5HA_Zw?si=h2Y49KvBehGQzvH9",
     features: [
@@ -345,7 +371,7 @@ function renderCatalog() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
-            <span>Download</span>
+            <span>${mod.id === 'SILIWANGI 3.0' ? 'Purchase' : 'Download'}</span>
           </a>
         </div>
       </div>
@@ -398,7 +424,22 @@ function openModDetail(modId) {
   if (detailPrice) detailPrice.textContent = `₹${mod.price.toFixed(2)}`;
 
   const detailDownloadBtn = document.getElementById('detailDownloadBtn');
-  if (detailDownloadBtn) detailDownloadBtn.href = mod.downloadUrl;
+  if (detailDownloadBtn) {
+    detailDownloadBtn.href = mod.downloadUrl;
+    const isSiliwangi = mod.id === 'SILIWANGI 3.0';
+    detailDownloadBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
+      ${isSiliwangi ? 'Purchase' : 'Direct Download'}
+    `;
+  }
+
+  const detailPasswordBtn = document.getElementById('detailPasswordBtn');
+  if (detailPasswordBtn) {
+    detailPasswordBtn.href = mod.passwordUrl;
+    detailPasswordBtn.style.display = (mod.id === 'SILIWANGI 3.0') ? 'none' : 'flex';
+  }
 
   // Reset tab to default info tab
   document.querySelectorAll('.detail-tab-trigger').forEach(t => t.classList.remove('active'));
@@ -733,3 +774,65 @@ window.showCookieBanner = function(event) {
     banner.classList.add('show');
   }
 };
+
+// ===================== Custom Smooth Cursor =====================
+(function initCustomCursor() {
+  const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!isFinePointer) return;
+
+  const dot = document.getElementById('cursorDot');
+  if (!dot) return;
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let dotX = mouseX, dotY = mouseY;
+
+  // Smoothing factor: lower = smoother/laggier trail, higher = snappier
+  const ease = 0.18;
+
+  let hasMoved = false;
+
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!hasMoved) {
+      hasMoved = true;
+      dotX = mouseX; dotY = mouseY;
+      dot.classList.add('visible');
+    }
+  });
+
+  window.addEventListener('mousedown', () => dot.classList.add('clicking'));
+  window.addEventListener('mouseup', () => dot.classList.remove('clicking'));
+
+  window.addEventListener('mouseleave', () => dot.classList.remove('visible'));
+  window.addEventListener('mouseenter', () => {
+    if (hasMoved) dot.classList.add('visible');
+  });
+
+  // Hover state on interactive elements
+  const hoverSelector = 'a, button, .mod-card, .tab-btn, [data-target], [data-category-target], input, select, textarea, .faq-question';
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.closest(hoverSelector)) dot.classList.add('hovering');
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (e.target.closest(hoverSelector)) dot.classList.remove('hovering');
+  });
+
+  function animateCursor() {
+    // Smoothly ease the dot toward the real cursor position for a gliding trail
+    dotX += (mouseX - dotX) * ease;
+    dotY += (mouseY - dotY) * ease;
+
+    dot.style.left = `${dotX}px`;
+    dot.style.top = `${dotY}px`;
+
+    requestAnimationFrame(animateCursor);
+  }
+  requestAnimationFrame(animateCursor);
+})();
+
+// ===================== Disable Right-Click =====================
+document.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+});
