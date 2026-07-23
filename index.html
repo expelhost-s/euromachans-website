@@ -126,6 +126,8 @@
         <div class="tabs-container">
           <button class="tab-btn active" data-category="all">All Mods</button>
           <button class="tab-btn" data-category="BUS">Bus Mods</button>
+          <button class="tab-btn" data-category="truck">Truck Mods</button>
+          <button class="tab-btn" data-category="car">Car Mods</button>
           <button class="tab-btn" data-category="MAP">Map Mods</button>
           <button class="tab-btn" data-category="sounds">Sound Mods</button>
           <button class="tab-btn" data-category="bundles">Accessories</button>
@@ -268,12 +270,21 @@
               <span class="mod-card-price-label">Price</span>
               <span class="detail-price-val" id="detailPrice">$0.00</span>
             </div>
-            <a href="#" target="_blank" rel="noopener" class="btn-download-mod" id="detailDownloadBtn" style="text-decoration: none; width: auto; padding: 12px 22px;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              Direct Download
-            </a>
+            <div class="detail-action-group">
+              <a href="#" target="_blank" rel="noopener" class="btn-get-password" id="detailPasswordBtn" style="text-decoration: none;" title="Get the mod password">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:18px;height:18px;">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"></rect>
+                  <path stroke-width="2" d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                Get Password
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="btn-download-mod" id="detailDownloadBtn" style="text-decoration: none; width: auto; padding: 12px 22px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Direct Download
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -618,6 +629,8 @@
           <h4 class="footer-col-title">Browse Category</h4>
           <ul class="footer-links">
             <li><a href="#" class="footer-link" data-category-target="BUS">Bus Mods</a></li>
+            <li><a href="#" class="footer-link" data-category-target="truck">Truck Mods</a></li>
+            <li><a href="#" class="footer-link" data-category-target="car">Car Mods</a></li>
             <li><a href="#" class="footer-link" data-category-target="MAP">Map Mods</a></li>
             <li><a href="#" class="footer-link" data-category-target="sounds">Sound Mods</a></li>
             <li><a href="#" class="footer-link" data-category-target="bundles">Accessories</a></li>
@@ -675,6 +688,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
 
   <script src="app.js"></script>
 </body>
