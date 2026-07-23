@@ -944,6 +944,39 @@ img {
   height: 16px;
 }
 
+.mod-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-mod-password {
+  background: transparent;
+  color: #fff;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.btn-mod-password:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.btn-mod-password svg {
+  width: 14px;
+  height: 14px;
+}
+
 /* Empty State / Search Not Found */
 .empty-state {
   grid-column: 1 / -1;
@@ -1663,6 +1696,36 @@ img {
   height: 20px;
 }
 
+.detail-action-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-get-password {
+  background: transparent;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-get-password:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
 /* Footer Section */
 .footer {
   background: var(--bg-darker);
@@ -2075,5 +2138,52 @@ img {
     right: 16px;
     max-width: none;
     padding: 16px;
+  }
+}
+
+/* ===================== Custom Cursor ===================== */
+@media (hover: hover) and (pointer: fine) {
+  html, body, a, button, input, textarea, select, .mod-card, .tab-btn,
+  .btn-mod-add, .btn-mod-password, .btn-get-password, .btn-download-mod,
+  .nav-link, [data-target], [data-category-target] {
+    cursor: none !important;
+  }
+
+  .cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary, #ff0000);
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate3d(-50%, -50%, 0);
+    box-shadow: 0 0 12px var(--primary-glow, rgba(255,0,0,0.45));
+    transition: width 0.25s ease, height 0.25s ease, background 0.25s ease, opacity 0.2s ease;
+    opacity: 0;
+  }
+
+  .cursor-dot.visible {
+    opacity: 1;
+  }
+
+  .cursor-dot.hovering {
+    width: 22px;
+    height: 22px;
+    background: rgba(255, 0, 0, 0.35);
+    box-shadow: 0 0 18px var(--primary-glow, rgba(255,0,0,0.55));
+  }
+
+  .cursor-dot.clicking {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot {
+    display: none;
   }
 }
