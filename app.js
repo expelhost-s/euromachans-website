@@ -47,6 +47,29 @@ const MODS_DATA = [
     ]
   },
   {
+    id: "BV MAXIMA",
+    name: "BV MAXIMA",
+    category: "BUS",
+    price: 0,
+    rating: 4.6,
+    reviewsCount: 142,
+    image: "assets/bv maxima.png",
+    version: "1.50 - 1.60+",
+    fileSize: "153 MB",
+    releaseDate: "AUG 2026",
+    creator: "SKINPACK",
+    downloadUrl: "https://discord.gg/cZKrkP7fyP",
+    passwordUrl: "https://discord.gg/cZKrkP7fyP",
+    shortDesc: "Tata LPT Lorry.",
+    description: "Tata LPT Lorry.",
+    features: [
+      "High Quality Skin Pack",
+      "High Optimized",
+      "5 exclusive skins",
+      "Latest Version"
+    ]
+  },
+  {
     id: "FORTUNER",
     name: "FORTUNER MOD",
     category: "car",
