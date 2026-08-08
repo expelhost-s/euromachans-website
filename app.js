@@ -65,7 +65,7 @@ const MODS_DATA = [
     features: [
       "High Quality Skin Pack",
       "High Optimized",
-      "5 exclusive skins",
+      "exclusive skins",
       "Latest Version"
     ]
   },
