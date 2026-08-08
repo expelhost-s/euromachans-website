@@ -30,7 +30,7 @@ const MODS_DATA = [
     price: 0,
     rating: 4.6,
     reviewsCount: 142,
-    image: "https://cdn.discordapp.com/attachments/1524805311699882095/1529916577565118596/2-11.jpg?ex=6a63ad58&is=6a625bd8&hm=650f9fa86f642eb299897c55b59e142d7f3320a3f41685ce00501c19fa23fcc0&",
+    image: "assets/maxresdefault.jpg",
     version: "1.50 - 1.60+",
     fileSize: "660 MB",
     releaseDate: "July 2026",
