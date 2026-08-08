@@ -50,7 +50,7 @@ const MODS_DATA = [
     id: "BV MAXIMA",
     name: "BV MAXIMA",
     category: "BUS",
-    price: 0,
+    price: 499,
     rating: 4.6,
     reviewsCount: 142,
     image: "assets/bv maxima.png",
