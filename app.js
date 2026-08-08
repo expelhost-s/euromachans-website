@@ -60,8 +60,8 @@ const MODS_DATA = [
     creator: "SKINPACK",
     downloadUrl: "https://discord.gg/cZKrkP7fyP",
     passwordUrl: "https://discord.gg/cZKrkP7fyP",
-    shortDesc: "Tata LPT Lorry.",
-    description: "Tata LPT Lorry.",
+    shortDesc: "BV MAXIMA.",
+    description: "BV MAXIMA.",
     features: [
       "High Quality Skin Pack",
       "High Optimized",
