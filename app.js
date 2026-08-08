@@ -30,20 +30,20 @@ const MODS_DATA = [
     price: 0,
     rating: 4.6,
     reviewsCount: 142,
-    image: "assets/ZED ASTRA SKINPACK.png",
+    image: "assets/ets2_20260808_131806_00.png",
     version: "1.50 - 1.60+",
     fileSize: "667 MB",
     releaseDate: "July 2026",
     creator: "SKINPACK",
-    downloadUrl: "https://sharemods.com/0v0e6n6u8ieg/ZED_ASTRA_SKINPACK_TEAM_JAR.scs.html",
-    passwordUrl: "https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
-    shortDesc: "ZED ASTRA SKINPACK FREE RELEASE.",
-    description: "ZED ASTRA SKINPACK FREE RELEASE. 5 SKINS. Password in Video:https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
+    downloadUrl: "https://discord.gg/cZKrkP7fyP",
+    passwordUrl: "https://discord.gg/cZKrkP7fyP",
+    shortDesc: "Tata LPT Lorry.",
+    description: "Tata LPT Lorry.",
     features: [
       "High Quality Skin Pack",
       "High Optimized",
       "5 exclusive skins",
-      "Free Mod"
+      "Latest Version"
     ]
   },
   {
