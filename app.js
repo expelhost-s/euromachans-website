@@ -27,7 +27,7 @@ const MODS_DATA = [
     id: "Tata LPT Lorry",
     name: "Tata LPT Lorry",
     category: "truck",
-    price: 0,
+    price: 199,
     rating: 4.6,
     reviewsCount: 142,
     image: "assets/ets2_20260808_131806_00.png",
