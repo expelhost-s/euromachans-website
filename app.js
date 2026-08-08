@@ -24,6 +24,29 @@ const MODS_DATA = [
     ]
   },
   {
+    id: "Tata LPT Lorry",
+    name: "Tata LPT Lorry",
+    category: "truck",
+    price: 0,
+    rating: 4.6,
+    reviewsCount: 142,
+    image: "assets/ZED ASTRA SKINPACK.png",
+    version: "1.50 - 1.60+",
+    fileSize: "667 MB",
+    releaseDate: "July 2026",
+    creator: "SKINPACK",
+    downloadUrl: "https://sharemods.com/0v0e6n6u8ieg/ZED_ASTRA_SKINPACK_TEAM_JAR.scs.html",
+    passwordUrl: "https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
+    shortDesc: "ZED ASTRA SKINPACK FREE RELEASE.",
+    description: "ZED ASTRA SKINPACK FREE RELEASE. 5 SKINS. Password in Video:https://youtu.be/iJQtZOmAgBY?si=kdIC_uM0UZTzXhDG",
+    features: [
+      "High Quality Skin Pack",
+      "High Optimized",
+      "5 exclusive skins",
+      "Free Mod"
+    ]
+  },
+  {
     id: "FORTUNER",
     name: "FORTUNER MOD",
     category: "car",
