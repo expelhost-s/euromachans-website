@@ -72,7 +72,7 @@ const MODS_DATA = [
   },
   {
     id: "FREE VOCAL PACK",
-    name: "FREE VOCAL PACK",
+    name: "FREE VOCAL PACK V2",
     category: "sounds",
     price: 0,
     rating: 4.9,
