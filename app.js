@@ -99,7 +99,7 @@ const MODS_DATA = [
     price: 400,
     rating: 4.9,
     reviewsCount: 210,
-    image: "assets/SILVANGI MAP MOD.jpg",
+    image: "assets/tata ets2_20260724_230342_00.png",
     version: "1.40 - 1.60+",
     fileSize: "1.6 GB",
     releaseDate: "April 2026",
