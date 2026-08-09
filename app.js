@@ -82,9 +82,9 @@ const MODS_DATA = [
     fileSize: "10 MB",
     releaseDate: "April 2026",
     creator: "SOUND",
-    downloadUrl: "https://sharemods.com/j8fzkmge2sz6/free_vocal_BY_JAR.rar.html",
+    downloadUrl: "https://sharemods.com/3bbed9zmve9l/FREE__VOCAL_V2_BY_TEAM_JAR.scs.html",
     passwordUrl: "https://youtube.com/shorts/gtcvy5HA_Zw?si=h2Y49KvBehGQzvH9",
-    shortDesc: "FREE VOCAL PACK ENJOY!",
+    shortDesc: "FREE VOCAL PACK ENJOY! PASSWORD IS: VOCAL- FREE-TEAM-JAR",
     description: "Enhance your Euro Truck Simulator 2 experience with this free Vocal Pack. Featuring high-quality voice effects, realistic audio, and seamless compatibility with ETS2 v1.40–1.60+. Easy to install and perfect for making every journey more immersive. Password in Video:https://youtube.com/shorts/gtcvy5HA_Zw?si=h2Y49KvBehGQzvH9",
     features: [
       "High Optimized Vocal Mod",
