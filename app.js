@@ -47,8 +47,8 @@ const MODS_DATA = [
     ]
   },
   {
-    id: "SILIWANGI 3.0",
-    name: "MAP SILIWANGI 3.0",
+    id: "SILIWANGI WITH JZ ADDON",
+    name: "MAP SILIWANGI WITH JZ ADDON",
     category: "MAP",
     price: 400,
     rating: 4.9,
