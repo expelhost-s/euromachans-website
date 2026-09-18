@@ -50,7 +50,7 @@ const MODS_DATA = [
     id: "SILIWANGI WITH JZ ADDON",
     name: "MAP SILIWANGI WITH JZ ADDON",
     category: "MAP",
-    price: 400,
+    price: 500,
     rating: 4.9,
     reviewsCount: 210,
     image: "assets/tata ets2_20260724_230342_00.png",
