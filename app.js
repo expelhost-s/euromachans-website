@@ -24,6 +24,29 @@ const MODS_DATA = [
     ]
   },
   {
+    id: "FORCE TRAVELLER",
+    name: "FORCE TRAVELLER",
+    category: "BUS",
+    price: 750,
+    rating: 4.6,
+    reviewsCount: 142,
+    image: "assets/traveller.png",
+    version: "1.50 - 1.61+",
+    fileSize: "753 MB",
+    releaseDate: "September 2026",
+    creator: "VAN",
+    downloadUrl: "https://forms.jzdesign.indevs.in/",
+    passwordUrl: "https://forms.jzdesign.indevs.in/",
+    shortDesc: "FORCE TRAVELLER MOD",
+    description: "FORCE TRAVELLER MOD HIGH POLY OPTIMIZED",
+    features: [
+      "High Quality Van Mod",
+      "High Optimized",
+      "10+ exclusive skins",
+      "Paid Mod"
+    ]
+  },
+  {
     id: "ZED ASTRA SKINPACK",
     name: "ZED ASTRA SKINPACK",
     category: "BUS",
